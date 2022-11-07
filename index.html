@@ -10,25 +10,68 @@
 </head>
 <body>
   <div class="container">
-    <div class="airspace">
-      <div class="altitude-block">
-        <div class="altitude">15,000</div>
-        <div class="altitude">14,000</div>
-        <div class="altitude">13,000</div>
-        <div class="altitude">12,000</div>
-        <div class="altitude">11,000</div>
-        <div class="altitude">10,000</div>
-        <div class="altitude">9,000</div>
-        <div class="altitude">8,000</div>
-        <div class="altitude">7,000</div>
-        <div class="altitude">6,000</div>
-        <div class="altitude">5,000</div>
-        <div class="altitude">4,000</div>
-        <div class="altitude">3,000</div>
-        <div class="altitude">2,000</div>
-        <div class="altitude">1,000</div>
+    <div class="altimeter">
+      <div class="airspace">
+        <div class="altitude-block">
+          <div class="top altitude"></div>
+          <div class="altitude">15,000</div>
+          <div class="altitude">14,000</div>
+          <div class="altitude">13,000</div>
+          <div class="altitude">12,000</div>
+          <div class="altitude">11,000</div>
+          <div class="altitude">10,000</div>
+          <div class="altitude">9,000</div>
+          <div class="altitude">8,000</div>
+          <div class="altitude">7,000</div>
+          <div class="altitude">6,000</div>
+          <div class="altitude">5,000</div>
+          <div class="altitude">4,000</div>
+          <div class="altitude">3,000</div>
+          <div class="altitude">2,000</div>
+          <div class="altitude">1,000</div>
+        </div>
+        <div class="freefall-block">
+          <div class="freefall">
+            <div class="altitude-loss"></div>
+            <div class="skydiver"></div>
+            <div class="pull-altitude"></div>
+          </div>
+        </div>
       </div>
-      <div class="skydiver"></div>
+    </div>
+    <div class="controls">
+      <label for="exit-altitude">Exit altitude: </label>
+      <select name="exit-altitude" id="exit-altitude">
+        <option value="15">15,000 ft</option>
+        <option value="14">14,000 ft</option>
+        <option value="13">13,000 ft</option>
+        <option value="12">12,000 ft</option>
+        <option value="11">11,000 ft</option>
+        <option value="10">10,000 ft</option>
+        <option value="9">9,000 ft</option>
+        <option value="8">8,000 ft</option>
+        <option value="7">7,000 ft</option>
+        <option value="6">6,000 ft</option>
+        <option value="5">5,000 ft</option>
+      </select>
+      <label for="pull-altitude">Pull altitude: </label>
+      <select name="pull-altitude" id="pull-altitude">
+        <option value="15">15,000 ft</option>
+        <option value="14">14,000 ft</option>
+        <option value="13">13,000 ft</option>
+        <option value="12">12,000 ft</option>
+        <option value="11">11,000 ft</option>
+        <option value="10">10,000 ft</option>
+        <option value="9">9,000 ft</option>
+        <option value="8">8,000 ft</option>
+        <option value="7">7,000 ft</option>
+        <option value="6">6,000 ft</option>
+        <option value="5">5,000 ft</option>
+        <option value="4">4,000 ft</option>
+        <option value="3">3,000 ft</option>
+        <option value="2">2,000 ft</option>
+      </select>
+      <button id="go">GO</button>
     </div>
   </div>
 </body>
