@@ -104,3 +104,52 @@ body {
   border-width: 1px;
   padding: 10px;
 }
+
+/* WINDROSE */
+
+.windrose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 50vh;
+  min-width: 50vh;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 100%;
+}
+
+.direction-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.direction {
+  position: absolute;
+  height: 23vh;
+  font-size: 1rem;
+}
+
+.degree-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.degree {
+  position: absolute;
+  height: 19.5vh;
+}
+
+
