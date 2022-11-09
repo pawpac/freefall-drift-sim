@@ -13,6 +13,7 @@ body {
 
 .container {
   display: flex;
+  gap: 10px;
   width: 100%;
   height: 100%;
   padding: 30px;
@@ -21,6 +22,8 @@ body {
 .altimeter {
   height: 100%;
   width: 150px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .freefall-block {
@@ -47,6 +50,17 @@ body {
   width: 100%;
 }
 
+.exit-alt-block {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.exit-alt {
+  width: 100%;
+  height: 6.25%;
+}
+
 .altitude {
   border-top-style: dotted;
   border-width: 1px;
@@ -55,7 +69,9 @@ body {
 }
 
 .top {
-  border-style: none;
+  /* border-style: none; */
+  width: 100%;
+  height: 6.25%;
 }
 
 .airspace {
@@ -65,7 +81,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: rgb(50, 242, 242);
+  background-color: rgb(154, 255, 255);
 }
 
 .skydiver {
@@ -81,4 +97,10 @@ body {
 .pull-altitude {
   width: 100%;
   height: 0%;
+}
+
+.controls {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
 }

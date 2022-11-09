@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script src="windrose.js" defer></script>
   <title>Document</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <div class="altimeter">
       <div class="airspace">
         <div class="altitude-block">
-          <div class="top altitude"></div>
+          <div class="top"></div>
           <div class="altitude">15,000</div>
           <div class="altitude">14,000</div>
           <div class="altitude">13,000</div>
@@ -40,8 +41,9 @@
       </div>
     </div>
     <div class="controls">
-      <label for="exit-altitude">Exit altitude: </label>
+      <label for="exit-altitude">Altitude: </label>
       <select name="exit-altitude" id="exit-altitude">
+        <option>Exit (ft)</option> 
         <option value="15">15,000 ft</option>
         <option value="14">14,000 ft</option>
         <option value="13">13,000 ft</option>
@@ -54,8 +56,9 @@
         <option value="6">6,000 ft</option>
         <option value="5">5,000 ft</option>
       </select>
-      <label for="pull-altitude">Pull altitude: </label>
+      <label for="pull-altitude"></label>
       <select name="pull-altitude" id="pull-altitude">
+        <option>Pull (ft)</option>
         <option value="15">15,000 ft</option>
         <option value="14">14,000 ft</option>
         <option value="13">13,000 ft</option>
