@@ -1,9 +1,17 @@
 const altitudeLoss = document.querySelector('.altitude-loss');
 const altiLines = document.querySelectorAll('.altitude');
+const arm = document.querySelector('.arm-container');
 
 let loss = 0;
 let altitudeDrop = 0;
 
+//test
+
+let init = 215;
+let percent = 0;
+let obj = {};
+
+//test
 
 
 
@@ -17,6 +25,18 @@ const go = document.getElementById('go');
 
 let exitChoice = exitAlt.value;
 let pullChoice = pullAlt.value;
+
+
+//test
+for (i = 1; i <= 20; i += 1) {
+  init = init + 0.75;
+  // percent = percent + 1;
+  obj[i] = init;
+}
+
+console.log(obj);
+//test
+
 
 go.addEventListener('click', () => {
 
@@ -32,6 +52,14 @@ exitChoice = exitAlt.value;
       altitudeDrop = loss + 1.1;
       altitudeLoss.style.height = altitudeDrop + '%';
       loss = loss + 0.011;
+
+      //test
+Object.getOwnPropertyNames(obj).forEach(name => {
+  if (parseInt(name) == parseInt(loss)) {
+    arm.style.transform = 'rotate(' + obj[name] + 'deg)';
+  }
+})
+//test
   
   
   
@@ -46,6 +74,8 @@ exitChoice = exitAlt.value;
 
 console.log(exitAlt.value);
 console.log(pullChoice);
+
+
 
 
 
@@ -117,6 +147,18 @@ function pullAltitudeIndicator() {
     })
   }
 }
+
+
+
+
+
+
+
+
+// for (i = 0; i < 2000; i += 1) {
+//   console.log(Object.getOwnPropertyNames(obj[i]));
+// }
+
 
 
 

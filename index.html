@@ -42,6 +42,9 @@
     </div>
     <div class="windrose">
       <div class="face">
+        <div class="arm-container">
+          <div class="arm"></div>
+        </div>
         <div class="direction-container">
           <div class="direction">
             <div class="marking">N</div>
@@ -125,39 +128,71 @@
       </div>
     </div>
     <div class="controls">
-      <label for="exit-altitude">Altitude: </label>
-      <select name="exit-altitude" id="exit-altitude">
-        <option>Exit (ft)</option> 
-        <option value="15">15,000 ft</option>
-        <option value="14">14,000 ft</option>
-        <option value="13">13,000 ft</option>
-        <option value="12">12,000 ft</option>
-        <option value="11">11,000 ft</option>
-        <option value="10">10,000 ft</option>
-        <option value="9">9,000 ft</option>
-        <option value="8">8,000 ft</option>
-        <option value="7">7,000 ft</option>
-        <option value="6">6,000 ft</option>
-        <option value="5">5,000 ft</option>
-      </select>
-      <label for="pull-altitude"></label>
-      <select name="pull-altitude" id="pull-altitude">
-        <option>Pull (ft)</option>
-        <option value="15">15,000 ft</option>
-        <option value="14">14,000 ft</option>
-        <option value="13">13,000 ft</option>
-        <option value="12">12,000 ft</option>
-        <option value="11">11,000 ft</option>
-        <option value="10">10,000 ft</option>
-        <option value="9">9,000 ft</option>
-        <option value="8">8,000 ft</option>
-        <option value="7">7,000 ft</option>
-        <option value="6">6,000 ft</option>
-        <option value="5">5,000 ft</option>
-        <option value="4">4,000 ft</option>
-        <option value="3">3,000 ft</option>
-        <option value="2">2,000 ft</option>
-      </select>
+      <div class="altitude-controls">
+        <div class="control-head">Altitude</div>
+        <div>Choose exit and pull altitudes:</div>
+        <label for="exit-altitude"></label>
+        <select name="exit-altitude" id="exit-altitude">
+          <option>Exit (ft)</option> 
+          <option value="15">15,000 ft</option>
+          <option value="14">14,000 ft</option>
+          <option value="13">13,000 ft</option>
+          <option value="12">12,000 ft</option>
+          <option value="11">11,000 ft</option>
+          <option value="10">10,000 ft</option>
+          <option value="9">9,000 ft</option>
+          <option value="8">8,000 ft</option>
+          <option value="7">7,000 ft</option>
+          <option value="6">6,000 ft</option>
+          <option value="5">5,000 ft</option>
+        </select>
+        <label for="pull-altitude"></label>
+        <select name="pull-altitude" id="pull-altitude">
+          <option>Pull (ft)</option>
+          <option value="15">15,000 ft</option>
+          <option value="14">14,000 ft</option>
+          <option value="13">13,000 ft</option>
+          <option value="12">12,000 ft</option>
+          <option value="11">11,000 ft</option>
+          <option value="10">10,000 ft</option>
+          <option value="9">9,000 ft</option>
+          <option value="8">8,000 ft</option>
+          <option value="7">7,000 ft</option>
+          <option value="6">6,000 ft</option>
+          <option value="5">5,000 ft</option>
+          <option value="4">4,000 ft</option>
+          <option value="3">3,000 ft</option>
+          <option value="2">2,000 ft</option>
+        </select>
+      </div>
+      <div class="wind-controls">
+        <div class="control-head">Wind</div>
+        <div>Enter wind direction (degrees) at each altitude:</div>
+        <div>
+          <label for="wind-direction"></label>
+          <input type="number" placeholder="Surface" id="surface" name="three">
+        </div>
+        <div>
+          <label for="wind-direction"></label>
+          <input type="number" placeholder="3000 ft" id="three" name="three">
+        </div>
+        <div>
+          <label for="wind-direction"></label>
+          <input type="number" placeholder="6000 ft" id="six" name="six">
+        </div>
+        <div>
+          <label for="wind-direction"></label>
+          <input type="number" placeholder="9000 ft" id="nine" name="nine">
+        </div>
+        <div>
+          <label for="wind-direction"></label>
+          <input type="number" placeholder="12000 ft" id="twelve" name="twelve">
+        </div>
+        <div>
+          <label for="wind-direction"></label>
+          <input type="number" placeholder="18000 ft" id="twelve" name="twelve">
+        </div>
+      </div>
       <button id="go">GO</button>
     </div>
   </div>

@@ -151,5 +151,47 @@ body {
   position: absolute;
   height: 19.5vh;
 }
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wind-controls {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.altitude-controls {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.control-head {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+select[name=exit-altitude],
+select[name=pull-altitude],
+input[type=number] {
+  margin-top: 5px;
+}
+
+.arm-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transform: rotate(0deg);
+}
+
+.arm {
+  position: absolute;
+  height: 17vh;
+  width: .5vh;
+  background-color: rgb(255, 64, 64);
+}
 
 
