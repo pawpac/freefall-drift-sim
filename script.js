@@ -9,7 +9,7 @@ let altitudeDrop = 0;
 
 let init = 215;
 let percent = 0;
-let obj = {};
+let obj = {0: 215};
 
 //test
 
@@ -30,9 +30,8 @@ let pullChoice = pullAlt.value;
 //test
 for (i = 1; i <= 20; i += 1) {
   init = init + 0.75;
-  // percent = percent + 1;
   obj[i] = init;
-}
+};
 
 console.log(obj);
 //test
@@ -46,24 +45,24 @@ go.addEventListener('click', () => {
 exitChoice = exitAlt.value;
     pullChoice = pullAlt.value;
   
-    loss = 100 - (exitChoice * 6.25) - 1.06282999;
+    loss = 100 - (exitChoice * 6.666666667);
   
     const dropAlittude = setInterval(() => {
-      altitudeDrop = loss + 1.1;
+      altitudeDrop = loss + 1.17333333;
       altitudeLoss.style.height = altitudeDrop + '%';
-      loss = loss + 0.011;
+      loss = loss + 0.011733333;
 
       //test
-Object.getOwnPropertyNames(obj).forEach(name => {
-  if (parseInt(name) == parseInt(loss)) {
-    arm.style.transform = 'rotate(' + obj[name] + 'deg)';
-  }
-})
-//test
+      Object.getOwnPropertyNames(obj).forEach(name => {
+        if (parseInt(name) == parseInt(loss)) {
+          arm.style.transform = 'rotate(' + obj[name] + 'deg)';
+        }
+      })
+      //test
   
   
   
-      if ((100 - (pullChoice * 6.25) - 1.06282999) < altitudeDrop) {
+      if ((100 - (pullChoice * 6.666666667)) < altitudeDrop) {
         clearInterval(dropAlittude);
       }
   

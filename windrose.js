@@ -1,3 +1,5 @@
+//DISPLAY
+
 const direction = document.querySelectorAll('.direction-container');
 const marking = document.querySelectorAll('.marking');
 const windroseFace = document.querySelector('.face');
@@ -24,4 +26,8 @@ for (i = 0; i < 360; i += 20) {
   windroseFace.appendChild(degreeContainer);
   degreeContainer.appendChild(degree);
 }
+
+//FUNCTIONALITY
+
+
 

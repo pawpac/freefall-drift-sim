@@ -37,7 +37,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 93.75%;
 }
 
 .altitude-loss {
@@ -192,6 +192,11 @@ input[type=number] {
   height: 17vh;
   width: .5vh;
   background-color: rgb(255, 64, 64);
+}
+
+.dead-space {
+  height: 6.25%;
+  width: 100%;
 }
 
 
